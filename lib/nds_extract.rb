@@ -34,5 +34,5 @@ def gross_for_director(director_data)
   # result = {}
   # nil
 
-  pp director_data[:name]
+  pp director_data[:movies][:worldwide_gross]
 end
