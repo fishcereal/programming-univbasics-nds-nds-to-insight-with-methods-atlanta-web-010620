@@ -32,7 +32,7 @@ end
 
 def gross_for_director(director_data)
   result = {}
-  nil
+  # nil
   
   counter = 0 
   total = 0 
