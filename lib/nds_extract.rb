@@ -16,7 +16,7 @@ def directors_totals(nds)
   while counter < nds.length do 
       total = 0
       p 'blah blah blah'
-      total = gross_for_director(nds[:name])
+      total = gross_for_director(nds)
       p total 
       # result.store(nds[:name],total)
       counter+=1
