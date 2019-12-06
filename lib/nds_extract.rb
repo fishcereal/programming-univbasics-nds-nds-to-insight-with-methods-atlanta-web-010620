@@ -31,8 +31,16 @@ end
 
 
 def gross_for_director(director_data)
-  # result = {}
+  result = {}
   # nil
+  
+  counter = 0 
+  total = 0 
+  while counter < director_data[:movies].length do 
+    total += director_data[:movies][counter][:worldwide_gross]
+    counter +=1 
+  end
+  result.store(directors_data[:name],total)
 
   pp director_data[:movies][0][:worldwide_gross]
 end
