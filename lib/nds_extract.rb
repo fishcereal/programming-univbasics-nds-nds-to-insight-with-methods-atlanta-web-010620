@@ -21,6 +21,7 @@ def directors_totals(nds)
       result.store(nds,total)
       counter+=1
   end
+  return resutl
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
