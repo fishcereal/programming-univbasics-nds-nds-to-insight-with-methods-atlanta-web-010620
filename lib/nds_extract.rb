@@ -34,5 +34,5 @@ def gross_for_director(director_data)
   # result = {}
   # nil
 
-  p director_data
+  pp director_data
 end
