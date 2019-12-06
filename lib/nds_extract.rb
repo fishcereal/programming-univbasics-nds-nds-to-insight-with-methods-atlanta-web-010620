@@ -6,7 +6,7 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  p nds[:movies]
+  # p nds[:movies]
   result = {}
   nil
   
