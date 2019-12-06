@@ -17,7 +17,7 @@ def directors_totals(nds)
       total = 0
       p 'blah blah blah'
       # total = gross_for_director(nds[:name])
-      result.store(nds[:name],total)
+      # result.store(nds[:name],total)
       outside_counter+=1
   end
 end
