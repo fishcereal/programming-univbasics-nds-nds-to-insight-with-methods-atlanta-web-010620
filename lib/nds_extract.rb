@@ -6,7 +6,7 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  pp nds
+  pp nds[:outside_counter]
   result = {}
   nil
   
