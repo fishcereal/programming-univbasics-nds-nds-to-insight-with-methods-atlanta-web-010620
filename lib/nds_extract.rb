@@ -31,10 +31,20 @@ end
 
 
 def gross_for_director(director_data)
+  result = {}
+  nil
+  
+# start outside loop 
+
+outside_counter = 0
+while outside_counter < directors_database.length do 
     total = 0 
     counter = 0 
-    while counter < directors_data.length do 
-        total += directors_data[counter]#[:worldwide_gross]
+    while counter < directors_database[outside_counter][:movies].length do 
+        total += directors_database[outside_counter][:movies][counter][:worldwide_gross]
         counter+=1
     end
+    result.store(directors_database[outside_counter][:name],total)
+    outside_counter+=1
+end
 end
