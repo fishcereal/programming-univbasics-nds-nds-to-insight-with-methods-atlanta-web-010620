@@ -14,6 +14,7 @@ def directors_totals(nds)
   outside_counter = 0
   while outside_counter < nds.length do 
       total = 0
+      pp nds[:outside_counter][:name]
       total = gross_for_director(nds[:outside_counter][:name])
       result.store(nds[outside_counter][:name],total)
       outside_counter+=1
