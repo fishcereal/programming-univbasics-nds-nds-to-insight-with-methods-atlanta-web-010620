@@ -12,13 +12,14 @@ def directors_totals(nds)
   
   # start outside loop 
   
-  outside_counter = 0
-  while outside_counter < nds.length do 
+  counter = 0
+  while counter < nds.length do 
       total = 0
       p 'blah blah blah'
-      # total = gross_for_director(nds[:name])
+      total = gross_for_director(nds[:name])
+      p total 
       # result.store(nds[:name],total)
-      outside_counter+=1
+      counter+=1
   end
 end
 
