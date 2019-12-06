@@ -9,15 +9,15 @@ def directors_totals(nds)
   result = {}
   nil
   
-# start outside loop 
-
-outside_counter = 0
-while outside_counter < nds.length do 
-    total = 0
-    total = gross_for_director(nds[:outside_counter][:name])
-    result.store(nds[outside_counter][:name],total)
-    outside_counter+=1
-end
+  # start outside loop 
+  
+  outside_counter = 0
+  while outside_counter < nds.length do 
+      total = 0
+      total = gross_for_director(nds[:outside_counter][:name])
+      result.store(nds[outside_counter][:name],total)
+      outside_counter+=1
+  end
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
