@@ -6,6 +6,7 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
+  pp nds
   result = {}
   nil
   
@@ -15,7 +16,6 @@ def directors_totals(nds)
   while outside_counter < nds.length do 
       total = 0
       p 'blah blah blah'
-      pp nds[:outside_counter][:name]
       total = gross_for_director(nds[:outside_counter][:name])
       result.store(nds[outside_counter][:name],total)
       outside_counter+=1
