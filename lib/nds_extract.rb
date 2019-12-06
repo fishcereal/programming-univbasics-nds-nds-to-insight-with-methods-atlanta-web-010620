@@ -18,7 +18,7 @@ def directors_totals(nds)
       # p 'blah blah blah'
       total = gross_for_director(nds[counter])
       p total 
-      result.store(nds,total)
+      result.store(nds[counter],total)
       counter+=1
   end
   return result
