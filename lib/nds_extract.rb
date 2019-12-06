@@ -16,7 +16,8 @@ while outside_counter < nds.length do
     total = 0 
     counter = 0 
     while counter < nds[outside_counter][:movies].length do 
-        total += nds[outside_counter][:movies][counter][:worldwide_gross]
+        # total += nds[outside_counter][:movies][counter][:worldwide_gross]
+        total = gross_for_director(nds[:outside_counter][:name])
         counter+=1
     end
     result.store(nds[outside_counter][:name],total)
